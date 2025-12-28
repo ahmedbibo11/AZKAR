@@ -247,8 +247,6 @@ def send_current_dhikr(chat_id, uid):
     )
 
 
-
-
 def next_dhikr(chat_id, uid):
     state = USER_STATE[uid]
     state["index"] += 1
