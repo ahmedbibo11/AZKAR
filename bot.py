@@ -241,10 +241,10 @@ def send_current_dhikr(chat_id, uid):
     dhikr = ADHKAR[state["section"]][state["index"]]
 
    bot.send_message(
-    chat_id,
-    f"<code>﴿ {dhikr['text']} ﴾</code>",
-    reply_markup=counter_kb(state["remaining"])
-)
+        chat_id,
+        f"<code>﴿ {dhikr['text']} ﴾</code>",
+        reply_markup=counter_kb(state["remaining"])
+    )
 
 
 
