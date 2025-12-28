@@ -211,7 +211,7 @@ def next_dhikr(chat_id, uid):
     state["index"] += 1
 
     if state["index"] >= len(ADHKAR[state["section"]]):
-        bot.send_message(chat_id, "🤍 <b>تقبّل الله</b>")
+        bot.send_message(chat_id, "🤍 <b>تقبل الله منا ومنكم صالح الاعمال</b>")
         del USER_STATE[uid]
         return
 
