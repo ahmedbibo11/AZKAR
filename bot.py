@@ -242,10 +242,10 @@ def send_current_dhikr(chat_id, uid):
 
    bot.send_message(
     chat_id,
-    f"﴿ {dhikr['text']} ﴾",   
-    parse_mode="HTML",    
+    f"<code>﴿ {dhikr['text']} ﴾</code>",
     reply_markup=counter_kb(state["remaining"])
 )
+
 
 
 
