@@ -240,11 +240,13 @@ def send_current_dhikr(chat_id, uid):
     state = USER_STATE[uid]
     dhikr = ADHKAR[state["section"]][state["index"]]
 
-    bot.send_message(
-        chat_id,
-        f"<code>﴿ {dhikr['text']} ﴾</code>",
-        reply_markup=counter_kb(state["remaining"])
-    )
+   bot.send_message(
+    chat_id,
+    f"﴿ {dhikr['text']} ﴾",  # مجرد نص عادي
+    parse_mode="HTML",         # لو عايز تعمل bold لكلمات معينة
+    reply_markup=counter_kb(state["remaining"])
+)
+
 
 
 def next_dhikr(chat_id, uid):
