@@ -242,8 +242,8 @@ def send_current_dhikr(chat_id, uid):
 
    bot.send_message(
     chat_id,
-    f"﴿ {dhikr['text']} ﴾",  # مجرد نص عادي
-    parse_mode="HTML",         # لو عايز تعمل bold لكلمات معينة
+    f"﴿ {dhikr['text']} ﴾",   
+    parse_mode="HTML",    
     reply_markup=counter_kb(state["remaining"])
 )
 
